@@ -1,0 +1,10 @@
+/home/lesh/Work/elma/code307/code307/code307/bin/Debug/netcoreapp2.0/code307.deps.json
+/home/lesh/Work/elma/code307/code307/code307/bin/Debug/netcoreapp2.0/code307.runtimeconfig.json
+/home/lesh/Work/elma/code307/code307/code307/bin/Debug/netcoreapp2.0/code307.runtimeconfig.dev.json
+/home/lesh/Work/elma/code307/code307/code307/bin/Debug/netcoreapp2.0/code307.dll
+/home/lesh/Work/elma/code307/code307/code307/bin/Debug/netcoreapp2.0/code307.pdb
+/home/lesh/Work/elma/code307/code307/code307/obj/Debug/netcoreapp2.0/code307.csproj.CoreCompileInputs.cache
+/home/lesh/Work/elma/code307/code307/code307/obj/Debug/netcoreapp2.0/code307.AssemblyInfoInputs.cache
+/home/lesh/Work/elma/code307/code307/code307/obj/Debug/netcoreapp2.0/code307.AssemblyInfo.cs
+/home/lesh/Work/elma/code307/code307/code307/obj/Debug/netcoreapp2.0/code307.dll
+/home/lesh/Work/elma/code307/code307/code307/obj/Debug/netcoreapp2.0/code307.pdb

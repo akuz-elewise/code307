@@ -1,0 +1,92 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<script>
+    function doOutput(id, xhr)
+    {
+        var output = document.getElementById(id);
+        if (xhr.status == 200)
+        {
+            output.innerText = xhr.responseText;
+        }
+        else if (xhr.status == 404)
+        {
+            output.innerText = '404';
+        }
+        else
+        {
+            output.innerText = 'Какой-то ахтунг!';
+        }
+    }
+
+    function doRequest(url, method, params)
+    {
+        var xhr = new XMLHttpRequest();
+        xhr.open(method, url, false);
+        xhr.send(params);
+        return xhr;
+    }
+
+    function checkGet()
+    {
+        var xhr = doRequest('/Home/CheckGet', 'GET');
+        doOutput("getResult", xhr);
+    }
+
+    function checkPost()
+    {
+        var xhr = doRequest('/Home/CheckPost', 'POST', { data: 'OK' });
+        doOutput("postResult", xhr);
+    }
+
+    function checkPut()
+    {
+        var xhr = doRequest('/Home/CheckPut', 'PUT', { data: 'OK' });
+        doOutput("putResult", xhr);
+    }
+
+    function checkDelete()
+    {
+        var xhr = doRequest('/Home/CheckDelete', 'DELETE');
+        doOutput("deleteResult", xhr);
+    }
+
+    function checkHead()
+    {
+        var xhr = doRequest('/Home/CheckHead', 'HEAD');
+        doOutput("headResult", xhr);
+    }
+
+    function checkOptions()
+    {
+        var xhr = doRequest('/Home/CheckOptions', 'OPTIONS');
+        doOutput("optionsResult", xhr);
+    }
+
+</script>
+
+<div>
+    <input type="button" value="Проверить GET" onclick="checkGet()">
+    <span id="getResult"></span>
+</div>
+<div>
+    <input type="button" value="Проверить POST" onclick="checkPost()">
+    <span id="postResult"></span>
+</div>
+<div>
+    <input type="button" value="Проверить PUT" onclick="checkPut()">
+    <span id="putResult"></span>
+</div>
+<div>
+    <input type="button" value="Проверить DELETE" onclick="checkDelete()">
+    <span id="deleteResult"></span>
+</div>
+<div>
+    <input type="button" value="Проверить HEAD" onclick="checkHead()">
+    <span id="headResult"></span>
+</div>
+<div>
+    <input type="button" value="Проверить OPTIONS" onclick="checkOptions()">
+    <span id="optionsResult"></span>
+</div>
